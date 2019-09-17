@@ -121,7 +121,7 @@ Most of the following mappings are for normal/visual mode only. The **|NERDComme
 
     Comments the given lines using only one set of multipart delimiters.
 
-  * `[count]<leader>ci` **|NERDCommenterInvert|**
+  * `[count]<leader>cx` **|NERDCommenterInvert|**
 
     Toggles the comment state of the selected line(s) individually.
 

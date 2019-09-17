@@ -109,7 +109,7 @@ let s:delimiterMap = {
     \ 'blade': { 'left': '{{--', 'right': '--}}' },
     \ 'bst': { 'left': '%' },
     \ 'btm': { 'left': '::' },
-    \ 'c': { 'left': '/*', 'right': '*/', 'leftAlt': '//' },
+    \ 'c': { 'left': '/* NERD: ', 'right': ' */', 'leftAlt': '// NERD: ' },
     \ 'cabal': { 'left': '--' },
     \ 'calibre': { 'left': '//' },
     \ 'caos': { 'left': '*' },
@@ -207,7 +207,7 @@ let s:delimiterMap = {
     \ 'groovy': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' },
     \ 'gsp': { 'left': '<%--', 'right': '--%>', 'leftAlt': '<!--', 'rightAlt': '-->' },
     \ 'gtkrc': { 'left': '#' },
-    \ 'h': { 'left': '//', 'leftAlt': '/*', 'rightAlt': '*/' },
+    \ 'h': { 'left': '// NERD: ', 'leftAlt': '/* NERD: ', 'rightAlt': ' */' },
     \ 'haml': { 'left': '-#', 'leftAlt': '/' },
     \ 'handlebars': { 'left': '{{!-- ', 'right': ' --}}' },
     \ 'haskell': { 'left': '--', 'nested': 0, 'leftAlt': '{-', 'rightAlt': '-}', 'nestedAlt': 1 },
@@ -354,7 +354,7 @@ let s:delimiterMap = {
     \ 'pug': { 'left': '//-', 'leftAlt': '//' },
     \ 'puppet': { 'left': '#' },
     \ 'pyrex': { 'left': '# ', 'leftAlt': '#' },
-    \ 'python': { 'left': '# ', 'leftAlt': '#' },
+    \ 'python': { 'left': '# NERD: ', 'leftAlt': '# NERD:' },
     \ 'r': { 'left': '#', 'leftAlt': '#''' },
     \ 'racket': { 'left': ';', 'nested': 1, 'leftAlt': '#|', 'rightAlt': '|#', 'nestedAlt': 1 },
     \ 'radiance': { 'left': '#' },
@@ -3064,7 +3064,7 @@ call s:CreateMaps('nx', 'Toggle',     'Toggle', 'c<space>')
 call s:CreateMaps('nx', 'Minimal',    'Minimal', 'cm')
 call s:CreateMaps('nx', 'Nested',     'Nested', 'cn')
 call s:CreateMaps('n',  'ToEOL',      'To EOL', 'c$')
-call s:CreateMaps('nx', 'Invert',     'Invert', 'ci')
+call s:CreateMaps('nx', 'Invert',     'Invert', 'cx')
 call s:CreateMaps('nx', 'Sexy',       'Sexy', 'cs')
 call s:CreateMaps('nx', 'Yank',       'Yank then comment', 'cy')
 call s:CreateMaps('n',  'Append',     'Append', 'cA')
